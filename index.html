@@ -8,43 +8,48 @@
 	<meta name="description" content="Web Design and Developer profile">
 	<meta name ="keywords" content="web, web designer, web design, design, web developer, web programmer, 
 	developer, programmer, web programming, programming">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/skeleton.css">
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 	</script>
 	<![endif]-->
 </head>
 <body>
-<content>
+<div class="container">
 	<img src="images/background_image.gif" class="background_image" width="1905" height="1270" alt="background_space_image"> 
-	<div id="onmouseover_div">
-		<h1 id="h1">Christopher Adams</h1>
-		<h2 id="h2">Front End Developer</h2>
-		<img src="images/me.gif" class="me_image" width="375" height="500" alt="me_image">
- 		<!-- START OF NAVIGATION-->
-		<nav id="nav_box">
-			<!--DROP DOWN BOX FOR MOBILE / TABLET-->
-			<div id="expand_links_button">
-				<div id="bar_1">
-					<div id="bar_2">
-						<div id="bar_3">
+	<div class="row">
+		<div class="column">
+			<h1 id="h1" class="column">Christopher Adams</h1>
+			<h2 id="h2" class="column">Front End Developer</h2>
+				<!-- <img src="images/me.gif" width="375" height="500" alt="me_image" id="me_image"> -->
+	 		<!-- START OF NAVIGATION-->
+			<nav id="nav_box">
+				<!--DROP DOWN BOX FOR MOBILE / TABLET-->
+				<div id="expand_links_button">
+					<div id="bar_1">
+						<div id="bar_2">
+							<div id="bar_3">
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<ul>
-				<li><a id="position_student_link" href="index.html">Student</a></li>
- 				<li><a id="position_web_developer_link" href="projects.html">Web Developer</a></li>
- 				<li><a id="position_projects_link" href="contact.html">Projects</a></li>
- 				<li><a id="position_services_link" href="services.html">Services</a></li>
- 				<li><a id="position_contact_link" href="contact.html">Contact</a></li>
- 			</ul>
-		</nav> 
-		<!--END OF NAV-->
-	</div><!--END OF onmouseover_div-->
-	<div id="position_student_column">
- 		<h3 id="student_toggle_bar"><span id="position_student_text">Student</span><span id="style_student_arrow">&#8681;</span><br /><br /></h3>
- 	<!--START OF PARAGRAPH--><p id="hide_student_paragraph">I'm a full time student at
+				<ul>
+					<li><a id="position_student_link" href="index.html">Student</a></li>
+	 				<li><a id="position_web_developer_link" href="projects.html">Web Developer</a></li>
+	 				<li><a id="position_projects_link" href="contact.html">Projects</a></li>
+	 				<li><a id="position_services_link" href="services.html">Services</a></li>
+	 				<li><a id="position_contact_link" href="contact.html">Contact</a></li>
+	 			</ul>
+			</nav> 
+			<!--END OF NAV-->
+		</div>
+	</div><!--END OF container-->
+	<div class="row">
+		<div id="position_student_column" class="twelve columns">
+ 			<h3 id="student_toggle_bar"><span id="position_student_text">Student</span><span id="style_student_arrow">&#8681;</span><br /><br /></h3>
+ 			<!--START OF PARAGRAPH--><p id="hide_student_paragraph">I'm a full time student at
  			<a target="_blank" href="http://www.spcollege.edu/"><strong class="p_links">Saint Petersburg College</strong></a> with a 3.57 GPA, and I'm near the completion of my
  			<a target="_blank" href="http://www.spcollege.edu/aadegree/"><strong class="p_links">AA</strong></a>
  			&amp; <a target="_blank" href="http://www.spcollege.edu/Web_Development_Certificate/">
@@ -53,19 +58,22 @@
  			bachelor's degree in <a id="p_links" target="_blank" href="http://web.spcollege.edu/courses/program/tmgt-bas/">
  			<strong class="p_links">Software Development</strong></a>. I think this degree is going to be a solid fit for me because the curriculum focuses heavily on algorithms and advanced programming concepts in <a target="_blank" href="http://www.w3schools.com/js/"><strong class="p_links">JavaScript</strong></a> and <a target="_blank" href="https://www.python.org/">
 			<strong class="p_links">Python</strong></a>. Both of these languages I truly plan on mastering, and I spend a good amount of time learning new programming concepts in and out of school. I have a strong passion for coding and I'm consistently furthering my knowledge through books, videos, lectures, live seminars, and of course by coding!</p>
+		</div><!--end of column-->
 	</div>
-   	<div id="position_web_developer_column">
- 		<h3 id="web_dev_toggle_bar"><span id="position_web_dev_text">Web Developer</span><span id="style_web_dev_arrow">&#8681;</span></h3>
- 		<p id="hide_web_dev_paragraph">I've always had a strong interest in computers from a very young age. I can remember tearing computers apart, putting them back together, and trying to figure out what exactly was going on with the command line. I couldn't have been any older than 8, and the computer that I used was already ancient and went by the name of Tandy!
+   	<div id="position_web_developer_column" class="row">
+   		<div class="column">
+ 			<h3 id="web_dev_toggle_bar"><span id="position_web_dev_text">Web Developer</span><span id="style_web_dev_arrow">&#8681;</span></h3>
+ 			<p id="hide_web_dev_paragraph">I've always had a strong interest in computers from a very young age. I can remember tearing computers apart, putting them back together, and trying to figure out what exactly was going on with the command line. I couldn't have been any older than 8, and the computer that I used was already ancient and went by the name of Tandy!
  			<br /><br />
- 		My passion for computers continued to persist throughout elementary and middle school when dial up internet was introduced, and I started to become obsessed with downloading music, burning cd's for friends and family, gaming, and building and repairing my own computers.
+ 			My passion for computers continued to persist throughout elementary and middle school when dial up internet was introduced, and I started to become obsessed with downloading music, burning cd's for friends and family, gaming, and building and repairing my own computers.
  			<br /><br />
- 		Throughout high school I continued to spend a good deal of time engaged with the machines that I've built, but knew nothing aside from the hardware components that I fiddled around with. It was when I enrolled in an introductory <a target="_blank" href="https://www.python.org/"><strong class="p_links">Python</strong></a> programming course at  <a target="_blank" href="http://www.spcollege.edu/"><strong class="p_links">Saint Petersburg College</strong></a> that I discovered a true passion for coding. I was hooked in from the start, and I started to think like a machine!
+ 			Throughout high school I continued to spend a good deal of time engaged with the machines that I've built, but knew nothing aside from the hardware components that I fiddled around with. It was when I enrolled in an introductory <a target="_blank" href="https://www.python.org/"><strong class="p_links">Python</strong></a> programming course at  <a target="_blank" href="http://www.spcollege.edu/"><strong class="p_links">Saint Petersburg College</strong></a> that I discovered a true passion for coding. I was hooked in from the start, and I started to think like a machine!
  			<br /><br />
- 		I'm an evolving Novice Web Developer; I know <a target="_blank" href="http://www.w3schools.com/html/default.asp"><strong class="p_links">HTML5</strong></a>, <a target="_blank" href="http://www.w3schools.com/css/css3_intro.asp"><strong class="p_links">CSS3</strong></a>, <a target="_blank" href="http://www.w3schools.com/js/"><strong class="p_links">JavaScript</strong></a>, <a target="_blank" href="https://www.python.org/"><strong class="p_links">Python</strong></a>, <a target="_blank" href="http://www.photoshop.com/products/photoshop"><strong class="p_links">Photoshop</strong></a>,
- 		and Responsive Web Design using <a target="_blank" href="http://www.w3schools.com/css/css3_mediaqueries.asp"><strong class="p_links">CSS3 Media Queries</strong></a>.
+ 			I'm an evolving Novice Web Developer; I know <a target="_blank" href="http://www.w3schools.com/html/default.asp	"><strong class="p_links">HTML5</strong></a>, <a target="_blank" href="http://www.w3schools.com/css/css3_intro.asp"><strong class="p_links">CSS3</strong></a>, <a target="_blank" href="http://www.w3schools.com/js/"><strong class="p_links">JavaScript</strong></a>, <a target="_blank" href="https://www.python.org/"><strong class="p_links">Python</strong></a>, <a target="_blank" href="http://www.photoshop.com/products/photoshop"><strong class="p_links">Photoshop</strong></a>,
+ 			and Responsive Web Design using <a target="_blank" href="http://www.w3schools.com/css/css3_mediaqueries.asp"><strong class="p_links">CSS3 Media Queries</strong></a>.
  			<br/><br /> 
- 		I'm currently furthering my knowledge in <a target="_blank" href="http://www.w3schools.com/js/"><strong class="p_links">JavaScript</strong></a>, <a target="_blank" href="https://jquery.com/"><strong class="p_links">JQUERY</strong></a>, <a target="_blank" href="http://getbootstrap.com/"><strong class="p_links">Bootstrap</strong></a>, <a target="_blank" href="https://git-scm.com/"><strong class="p_links">Git</strong></a> /  <a target="_blank" href="https://github.com/"><strong class="p_links">Github</strong></a>, and many other exciting languages and tools! This site was hand coded by me, and is being used as a means for learning &amp; experimentation.</p>
+ 			I'm currently furthering my knowledge in <a target="_blank" href="http://www.w3schools.com/js/"><strong class="p_links">JavaScript</strong></a>, <a target="_blank" href="https://jquery.com/"><strong class="p_links">JQUERY</strong></a>, <a target="_blank" href="http://getbootstrap.com/"><strong class="p_links">Bootstrap</strong></a>, <a target="_blank" href="https://git-scm.com/"><strong class="p_links">Git</strong></a> /  <a target="_blank" href="https://github.com/"><strong class="p_links">Github</strong></a>, and many other exciting languages and tools! This site was hand coded by me, and is being used as a means for learning &amp; experimentation.</p>
+ 		</div><!--end of column-->
 	</div>
 	<div id="position_projects_column">
 		<h3 id="projects_toggle_bar"><span id="position_projects_text">Projects</span><span id="style_projects_arrow">&#8679;</span></h3>
@@ -97,16 +105,17 @@
 		</div><!--END of form box wrapper-->
 	</div>
 	<footer>
+		<!--
 		<div id="style_footer_index">
 			<a href="mailto:cdadams1888@yahoo.com" target="_top"><strong id="email_me">Email Me</strong></a>
 			<img src="images/mail_icon.gif" class="mail_icon" width="150" height="112" alt="mail_icon">
 			<a target="_blank" href="https://www.facebook.com/christopher.adams.77715" id="facebook"><strong> Facebook</strong></a>
 			<img src="images/facebook_icon.gif" class="facebook_icon" width="150" height="112" alt="facebook_icon">
-		</div>
+		</div> -->
 	</footer>
+</div><!--END OF container-->
 <script type="text/javascript" src="/javascript/script.js"></script>
 <script src="javascript/jquery-2.2.0.js"></script>
 <script src="javascript/jquery.js"></script>
-</content>
 </body>
 </html>
