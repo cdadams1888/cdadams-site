@@ -75,7 +75,7 @@
 		border-color: #173e43;
 		background-color: #173e43;
 		width: 80%;
-		height: 3px;
+		height: 1px;
 		float: left;
 		position: relative;
 		top: 10px;
@@ -235,7 +235,7 @@
 	.style_form_text {
 		width: 75%;
 		background-color: #fae596;
-		color: #000;
+		color: #173e43;
 		font-size: 25px;
 		font-family: droid_serif;
 		margin: 5px;
