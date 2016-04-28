@@ -11,7 +11,10 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="icon" href="images/web_icon.ico">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 	</script>
@@ -21,38 +24,29 @@
 <div class="container">
 	<div class="row">
 		<div class="twelve columns">
-			<h1>Christopher D Adams</h1>
+			<h1 class="rubberBand">Christopher D Adams</h1>
 		</div>
 	 		<!-- START OF NAVIGATION-->
-	 	<div class="six columns">
-	 		<nav id="nav_button">
-	 			<div id="bar_1">
-	 				<div id="bar_2">
-	 					<div id="bar_3">
-	 					</div>
-	 				</div>
-	 			</div>
-	 		</nav>
-	 	</div>
-	 		<!--
-			<nav id="nav_box">
-				<ul>
-					<li><a id="position_student_link" href="index.html">Student</a></li>
-	 				<li><a id="position_web_developer_link" href="projects.html">Web Developer</a></li>
-	 				<li><a id="position_projects_link" href="contact.html">Projects</a></li>
-	 				<li><a id="position_services_link" href="services.html">Services</a></li>
-	 				<li><a id="position_contact_link" href="contact.html">Contact</a></li>
+	 		<nav class="twelve columns">
+	 			<div>
+	 				<i id="menu_button" class="material-icons md-48">menu</i>
+				</div>
+				<ul class="eleven columns" id="menu">
+					<li><a id="position_student_link" href="#student_toggle_bar">Student</a></li>
+	 				<li><a id="position_web_developer_link" href="#web_dev_toggle_bar">Web Developer</a></li>
+	 				<li><a id="position_projects_link" href="#projects_toggle_bar">Projects</a></li>
+	 				<li><a id="position_services_link" href="#services_toggle_bar">Services</a></li>
+	 				<li><a id="position_contact_link" href="#contact_toggle_bar">Contact</a></li>
 	 			</ul>
-			</nav> -->
-			<!--END OF NAV-->
+	 		</nav>
 		<div class="twelve columns">
-			<img src="images/background_image.jpg" id="background_image" height="3264" width="2448">
+			<img class="bounceInDown" src="images/background_image.jpg" id="background_image" height="3264" width="2448">
 		</div>
 	</div>
 	<div class="row">
 		<div class="twelve columns">
  			<h3 id="student_toggle_bar"><span id="position_student_text">Student</span><span id="style_student_arrow">&#8681;</span><br /><br /></h3>
- 			<!--START OF PARAGRAPH--><p id="hide_student_paragraph"><img src="images/student.png" width="64" height="64">I'm a full time student at
+ 			<!--START OF PARAGRAPH--><p id="hide_student_paragraph"><i class="material-icons md-48">local_library</i>I'm a full time student at
  			<a target="_blank" href="http://www.spcollege.edu/"><strong class="p_links">Saint Petersburg College</strong></a> with a 3.57 GPA, and I'm near the completion of my
  			<a target="_blank" href="http://www.spcollege.edu/aadegree/"><strong class="p_links">AA</strong></a>
  			&amp; <a target="_blank" href="http://www.spcollege.edu/Web_Development_Certificate/">
@@ -65,8 +59,9 @@
 	</div>
    	<div class="row">
    		<div class="column">
- 			<h3 id="web_dev_toggle_bar"><span id="position_web_dev_text">Developer</span><span id="style_web_dev_arrow">&#8681;</span></h3>
- 			<p id="hide_web_dev_paragraph"><img src="images/web.png" width="64" height="64">I've always had a strong interest in computers from a very young age. I can remember tearing computers apart, putting them back together, and trying to figure out what exactly was going on with the command line. I couldn't have been any older than 8, and the computer that I used was already ancient and went by the name of Tandy!
+ 			<h3  id="web_dev_toggle_bar"><span id="position_web_dev_text">Developer</span><span id="style_web_dev_arrow">&#8681;</span></h3>
+ 			<p id="hide_web_dev_paragraph"><i class="material-icons md-48">laptop</i>
+			I've always had a strong interest in computers from a very young age. I can remember tearing computers apart, putting them back together, and trying to figure out what exactly was going on with the command line. I couldn't have been any older than 8, and the computer that I used was already ancient and went by the name of Tandy!
  			<br /><br />
  			My passion for computers continued to persist throughout elementary and middle school when dial up internet was introduced, and I started to become obsessed with downloading music, burning cd's for friends and family, gaming, and building and repairing my own computers.
  			<br /><br />
@@ -80,11 +75,11 @@
 	</div>
 	<div>
 		<h3 id="projects_toggle_bar"><span id="position_projects_text">Projects</span><span id="style_projects_arrow">&#8679;</span></h3>
-		<p id="hide_projects_paragraph"><img src="images/technology.png" width="64" height="64">Projects coming soon!</p>
+		<p id="hide_projects_paragraph"><i class="material-icons md-48">assignment</i>Projects coming soon!</p>
 	</div>
 	<div>
 		<h3 id="services_toggle_bar"><span id="position_services_text">Services</span><span id="style_services_arrow">&#8679;</span></h3>
-		<p id="hide_services_paragraph"><img src="images/monitor.png" width="64" height="64">Services being offered in the near future!</p>
+		<p id="hide_services_paragraph"><i class="material-icons md-48">devices_other</i>Services being offered in the near future!</p>
 	</div>
 	<div>
 		<h3 id="contact_toggle_bar"><span id="position_contact_text">Contact</span><span id="style_contact_arrow">&#8679;</span></h3>
@@ -109,17 +104,12 @@
 	</div>
 	<footer>
 		<div id="style_footer_index">
-			<!--
-			<a href="mailto:cdadams1888@yahoo.com" target="_top"><strong id="email_me">Email Me</strong></a>
-			<img src="images/mail_icon.gif" class="mail_icon" width="150" height="112" alt="mail_icon">
-			<a target="_blank" href="https://www.facebook.com/christopher.adams.77715" id="facebook"><strong> Facebook</strong></a>
-			<img src="images/facebook_icon.gif" class="facebook_icon" width="150" height="112" alt="facebook_icon"> -->
-			<img src="images/GitHub.png" class="github_icon" width="64" height="64">
+			<img src="images/GitHub.svg" class="github_icon" width="64" height="64">
 		</div>
-		<div id="icon_credit">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+		<div id="icon_credit">Fav and GitHub icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 	</footer>
 </div><!--END OF container-->
-<script type="text/javascript" src="/javascript/script.js"></script>
+<script type="text/javascript" src="javascript/script.js"></script>
 <script src="javascript/jquery-2.2.0.js"></script>
 <script src="javascript/jquery.js"></script>
 </body>

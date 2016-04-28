@@ -1,37 +1,42 @@
-$(document).ready(function(){
-	// My dropdown menu for nav
-	$('#expand_links_button').click(function() { 
+// slow scroll
 
-    	var $t = $('#position_student_link, #position_web_developer_link, #position_projects_link, #position_services_link, #position_contact_link');
+$("li").children().on('click', function(event) {
+    event.preventDefault();
+    var hash = this.hash;
+
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 1200, function(){
+   
+      window.location.hash = hash;
+    });
+  });
 
 
-    	if ($t.is(':visible')) {
-    		$t.slideToggle(500);
-        	$("#nav_box").css("height", 125);
 
-        	$("#position_student_link").css("display", "hidden");
-        	$("#position_web_developer_link").css("display", "hidden");
-        	$("#position_projects_link").css("display", "hidden");
-        	$("#position_services_link").css("display", "hidden");
-        	$("#position_contact_link").css("display", "hidden");
 
-        	$('#expand_links_button').css("color", "black");
-		} 
-    
-    	else {
-        	$t.slideToggle(500);
-        	$("#nav_box").css("height", 550);
 
-        	$("#position_student_link").css("display", "block");
-        	$("#position_web_developer_link").css("display", "block");
-        	$("#position_projects_link").css("display", "block");
-        	$("#position_services_link").css("display", "block");
-        	$("#position_contact_link").css("display", "block");
 
-        	$('#expand_links_button').css("color", "white");
+    // Main Nav Dropdown Menu!
 
+    $("#menu_button").click(function() { 
+
+        var $t = $("#menu");
+
+
+        if ($t.is(':visible')) {
+            $t.slideToggle(500);
+            $t.css("display", "hidden");
+            $("#menu_button").text("menu");
         }
-	});
+             
+        else {
+            $t.slideToggle(500);
+            $t.css("display", "block");
+            $("#menu_button").text("close");
+        }
+    });
+
 		
 	//My dropdown for student section
 	$("#student_toggle_bar").click(function() { 
@@ -149,13 +154,12 @@ $(document).ready(function(){
         	$("#style_contact_arrow").html("&#8681");
         }
 	});
-});
 
-	//form processing
-	function check_form() {
-		var textbox = document.sendemail.name.value;
 
-		if (texbox == "") {
-			alert("Please provide your name!");
-		}
-	}
+
+
+
+
+
+
+
